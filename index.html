@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Notation Software</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="root">
+        <h1>Music Notation Software</h1>
+        <div id="toolbar">
+            <select id="part-selector">
+                <option value="" disabled selected>Select Part</option>
+                <optgroup label="Woodwinds">
+                    <option value="Flute">Flute</option>
+                    <option value="Oboe">Oboe</option>
+                    <option value="Clarinet">Clarinet</option>
+                    <option value="Saxophone">Saxophone</option>
+                    <option value="Bassoon">Bassoon</option>
+                </optgroup>
+                <optgroup label="Brass">
+                    <option value="Trumpet">Trumpet</option>
+                    <option value="Trombone">Trombone</option>
+                    <option value="French Horn">French Horn</option>
+                    <option value="Tuba">Tuba</option>
+                </optgroup>
+                <!-- Add more instrument groups as needed -->
+            </select>
+            <button id="add-part">Add Part</button>
+            <button id="create-score">Create Score</button>
+        </div>
+        <div id="score-container">
+            <!-- Music notation elements will be added here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
